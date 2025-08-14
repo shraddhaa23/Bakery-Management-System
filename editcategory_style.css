@@ -1,0 +1,64 @@
+﻿/* General container styling */
+.edit-category-container {
+    width: 50%;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.textbox {
+    width: fit-content;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    width: fit-content;
+}
+
+.btn-update {
+    background-color: #4CAF50;
+}
+
+    .btn-update:hover {
+        background-color: #45a049;
+    }
+
+.btn-cancel {
+    background-color: #dc3545;
+}
+
+    .btn-cancel:hover {
+        background-color: #c82333;
+    }

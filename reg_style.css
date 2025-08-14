@@ -1,0 +1,68 @@
+﻿/* Outer Panel Styling */
+.sign-up {
+    max-width: 100%; /* Make the panel take full width */
+    margin: 0; /* Remove centering */
+    padding: 0; /* Remove padding */
+    background-color: transparent; /* Make the background transparent */
+    font-family: Arial, sans-serif; /* Keep the font style */
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove shadow */
+}
+/* Title Styling */
+.title {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Label Styling */
+.label {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Textbox Styling */
+.textbox {
+    width: 100%; /* Full width of the panel */
+    max-width: 300px; /* Limit the maximum width */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Button Container */
+.button-container {
+    margin-top: 15px;
+}
+
+.button {
+    padding: 10px 20px; /* Adjust padding */
+    background-color: #cc00b8;
+    color: white;
+    border: none;
+    border-radius: 25px; /* Rounded corners for a modern look */
+    cursor: pointer;
+    font-size: 18px;
+}
+
+    .button:hover {
+        background-color: #a60396; /* Darker shade on hover */
+    }
+
+/* Context Container */
+.context-container {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.linkbutton {
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 5px;
+}

@@ -1,0 +1,109 @@
+﻿/* General container styling */
+.edit-product-container {
+    width: 50%;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.textbox, .dropdown {
+    width: fit-content;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Image Styling */
+.img-preview {
+    display: block;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    position: relative;
+}
+
+.custom-file-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #B2BEB5;
+    border: none;
+    width: fit-content; /* Adjust width */
+}
+
+    .custom-file-label img {
+        width: 20px;
+        height: 20px;
+    }
+
+/* Make the file input cover the button completely */
+.file-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+.message-label {
+    color: #dc3545;
+}
+/* Buttons */
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    width: fit-content;
+}
+
+.btn-update {
+    background-color: #4CAF50;
+}
+
+    .btn-update:hover {
+        background-color: #45a049;
+    }
+
+.btn-cancel {
+    background-color: #dc3545;
+}
+
+    .btn-cancel:hover {
+        background-color: #c82333;
+    }

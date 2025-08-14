@@ -1,0 +1,176 @@
+﻿/* Namespace styles for the dashboard page */
+.dashboard-page body {
+    background-color: #f8f9fa; /* Light grey background for the page */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styles */
+.dashboard-page .container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+}
+
+/* Card Styles */
+.dashboard-page .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.dashboard-page .card-body h5 {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.dashboard-page .card-body .h3 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Text Centered Cards */
+.dashboard-page .card.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 150px;
+}
+
+    /* Specific Background Colors for Different Cards */
+    .dashboard-page .card.text-center.bg-warning {
+        background-color: #ffc107; /* Bright yellow for Pending Orders */
+        color: #fff;
+    }
+
+    .dashboard-page .card.text-center.bg-success {
+        background-color: #28a745; /* Green for Delivered Orders */
+        color: #fff;
+    }
+
+    .dashboard-page .card.text-center.bg-danger {
+        background-color: #dc3545; /* Red for Cancelled Orders */
+        color: #fff;
+    }
+
+/* Card Shadow */
+.dashboard-page .card.shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid Layout for Dashboard Cards */
+/* Ensuring the rows align properly */
+.dashboard-page .row-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Ensuring the cards inside columns take equal width */
+.dashboard-page .col-lg-4 {
+    width: 32%; /* Adjust to ensure 3 items fit in one row */
+    margin-bottom: 20px;
+}
+
+
+.dashboard-page table.table {
+    width: 100%; /* Ensure the table takes up the full container width */
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+    table-layout: fixed; /* Makes sure all columns have equal width and fill the available space */
+}
+
+    .dashboard-page table.table thead {
+        background-color: #343a40;
+        color: #fff;
+    }
+
+    .dashboard-page table.table th,
+    .dashboard-page table.table td {
+        padding: 12px 15px;
+        text-align: left;
+        border: 1px solid #ddd;
+        word-wrap: break-word; /* Ensures text in cells wraps appropriately */
+    }
+
+        /* Adjust column widths if needed */
+        .dashboard-page table.table th:nth-child(1),
+        .dashboard-page table.table td:nth-child(1) {
+            width: 15%; /* Adjust the first column width */
+        }
+
+        .dashboard-page table.table th:nth-child(2),
+        .dashboard-page table.table td:nth-child(2) {
+            width: 20%; /* Adjust the second column width */
+        }
+
+        .dashboard-page table.table th:nth-child(3),
+        .dashboard-page table.table td:nth-child(3) {
+            width: 25%; /* Adjust the third column width */
+        }
+
+        .dashboard-page table.table th:nth-child(4),
+        .dashboard-page table.table td:nth-child(4) {
+            width: 40%; /* Adjust the fourth column width */
+        }
+
+/* Label Styles */
+.dashboard-page .h3 {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.dashboard-page .h4 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+/* Button Styles */
+.dashboard-page .btn {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-page .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+    .dashboard-page .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+.dashboard-page .btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+    .dashboard-page .btn-danger:hover {
+        background-color: #a71d2a;
+    }
+
+.dashboard-page .btn-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+    .dashboard-page .btn-success:hover {
+        background-color: #1e7d32;
+    }

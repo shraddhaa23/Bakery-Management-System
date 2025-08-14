@@ -1,0 +1,256 @@
+﻿/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+.header {
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #ccc;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+    .header h1 {
+        margin: 0;
+        color: #cc00b8;
+        font-size: 36px;
+        font-family: 'Lucida Calligraphy', cursive;
+    }
+
+.icon {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    object-fit: cover;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Ensure consistent alignment for the content container */
+.container {
+    padding: 20px;
+    margin-left: 20px;
+    max-width: 1000px;
+}
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cc00b8;
+    padding: 10px 20px;
+}
+
+    /* General Navbar Styling */
+    .navbar .links {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+        /* Keep navbar links white on hover */
+        .navbar a:hover {
+            color: black;
+        }
+
+/* Wrapper Styling */
+.categories {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+}
+
+/* Category Title */
+.category-toggle {
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+    .category-toggle:hover {
+        color: black;
+        border-radius: 5px;
+    }
+
+/* Common Dropdown Styling (Applied to Both Account and Subcategories) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    z-index: 100;
+    border-radius: 5px;
+}
+
+    /* Show Dropdown when Active */
+    .dropdown-content.show {
+        display: block;
+    }
+
+    /* Common Dropdown Links */
+    .dropdown-content a {
+        display: block;
+        color: black !important;
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+        /* Hover Effect */
+        .dropdown-content a:hover {
+            background-color: #d4c5d2;
+        }
+
+/* Adjust position for subcategories */
+.categories .dropdown-content {
+    top: 100%;
+    left: 0;
+    min-width: 200px
+}
+
+/* Adjust position for account dropdown */
+#accountDropdown {
+    right: 0;
+    top: 40px;
+}
+    #accountDropdown .dropdown-content {
+        padding: 5px 15px; /* Reduce padding inside links */
+        display: block;
+        color: black;
+        text-decoration: none;
+        font-size: 14px;
+        margin: 0;
+        min-width: 300px;
+        align-items: flex-start; /* Align text properly */
+        gap: 0;
+    }
+        /* Search Bar */
+        .search-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: auto;
+}
+
+.search-box {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+}
+
+    .search-btn i {
+        font-size: 18px;
+    }
+
+    .search-btn:hover i {
+        color: #000000;
+    }
+
+/* Navbar Links */
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+    .navbar a:hover {
+        color: black;
+    }
+
+/* Navbar Icons */
+.navbar .icons {
+    display: flex;
+    gap: 20px;
+}
+
+    .navbar .icons img {
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+/* Cart Styling */
+.cart-container {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.cart-icon {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.cart-badge-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.cart-badge {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1;
+}
+
+/* Content Placeholder */
+.content {
+    padding: 20px;
+}
+
+.logout-button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    display: block;
+    color: black !important; /* Ensure text is always black */
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+    .logout-button:focus,
+    .logout-button:active {
+        color: black !important; /* Maintain color on focus */
+    }
+
+    .logout-button:hover {
+        background-color: #d4c5d2;
+    }

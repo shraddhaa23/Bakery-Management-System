@@ -1,0 +1,93 @@
+﻿/* General styling for Orders page */
+.orders-container {
+    width: fit-content;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Message Label */
+.message {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #dc3545; /* Red color for errors/messages */
+}
+
+/* Orders Table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    .table th,
+    .table td {
+        padding: 12px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    .table th {
+        background-color: #AA98A9;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .table tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .table tr:hover {
+        background-color: #ddd;
+    }
+
+/* Buttons - General */
+.btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* Process Order Button */
+.btn-process {
+    background-color: #007bff; /* Blue */
+}
+
+    .btn-process:hover {
+        background-color: dodgerblue;
+    }
+
+.btn-deliver {
+    background-color: #28a745; /* Green */
+}
+
+    .btn-deliver:hover {
+        background-color: #218838; /* Darker Green */
+    }
+
+/* Cancel Order Button */
+.btn-danger {
+    background-color: red;
+}
+
+    .btn-danger:hover {
+        background-color: darkred;
+    }

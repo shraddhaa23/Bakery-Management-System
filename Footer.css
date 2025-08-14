@@ -1,0 +1,110 @@
+﻿/* Footer Styling */
+footer {
+    background-color: #333; /* Dark background color */
+    color: white; /* White text */
+    padding: 30px 20px 0; /* Padding for spacing, no padding at bottom */
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left,
+.footer-links,
+.footer-contact {
+    width: 30%;
+}
+
+    .footer-left h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-family: 'Lucida Calligraphy', cursive;
+    }
+
+    .footer-left p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .footer-links h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .footer-links ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .footer-links li {
+        margin-bottom: 8px;
+    }
+
+    .footer-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s ease;
+    }
+
+        .footer-links a:hover {
+            color: #ffcc00; /* Change color on hover */
+        }
+
+    .footer-contact h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .footer-contact p {
+        font-size: 14px;
+    }
+
+    .footer-contact .social-icons {
+        margin-top: 10px;
+    }
+
+        .footer-contact .social-icons img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+        }
+
+            .footer-contact .social-icons img:hover {
+                transform: scale(1.1); /* Enlarge icons on hover */
+            }
+
+/* Footer Bottom Section */
+.footer-bottom {
+    background-color: #333; /* Same as footer background */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+    .footer-bottom p {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0; /* No margin to avoid spacing */
+    }
+
+/* Footer Copyright Section */
+.footer-cr {
+    background-color: #333; /* Match footer background */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0; /* Remove all margins to ensure no extra space */
+    border-top:thin;
+}
+
+    .footer-cr p {
+        font-size: 14px;
+        margin: 0;
+    }

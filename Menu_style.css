@@ -1,0 +1,106 @@
+﻿/* Specific styles for Menu.aspx */
+
+/* Container for product section */
+.menu-products-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+    /* Title and category name styling */
+    .menu-products-container h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+.menu-category-name {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.no-products-message {
+    font-size: 18px;
+}
+/* Price filter section */
+.menu-price-filter {
+    margin-bottom: 20px;
+    padding-top: 10px !important;
+}
+
+    .menu-price-filter label {
+        font-size: 18px;
+        color: #333;
+        margin-right: 10px;
+    }
+
+    .menu-price-filter input {
+        padding: 5px 10px;
+        margin-right: 10px;
+        font-size: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100px;
+    height: 34px;
+}
+
+    .menu-price-filter button {
+        padding: 5px 15px;
+        background-color: #cc00b8;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+        .menu-price-filter button:hover {
+            background-color: #b3009e;
+        }
+
+/* Grid View styling for products */
+.menu-products-grid {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    .menu-products-grid th,
+    .menu-products-grid td {
+        padding: 15px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    .menu-products-grid th {
+        background-color: #cc00b8;
+        color: white;
+        font-size: 18px;
+    }
+
+    .menu-products-grid td {
+        background-color: #f8f8f8;
+    }
+
+    .menu-products-grid img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .menu-products-grid .menu-action-button {
+        padding: 8px 12px;
+        background-color: #cc00b8;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .menu-products-grid .menu-action-button:hover {
+            background-color: #b3009e;
+        }
+
+/* Hover effect for the buttons */
+.menu-action-button:hover {
+    background-color: #b3009e;
+}

@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.Master.cs" Inherits="BakeryShop.Site1" %>
+
+<%@ Register Src="~/Footer.ascx" TagName="footer" TagPrefix="AWPfooter" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Images/favicon.ico" type="image/x-icon">
+    <link href="User_style.css" rel="stylesheet" type="text/css" />
+    <link href="Footer.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server" />
+        <div class="main-container">
+            <div class="header">
+                <h1><img src="/Images/bakeryicon.png" alt="YK Bakery Icon" class="icon" />YK Bakery</h1>
+            </div>
+            <div class="navbar">
+                <div class="links">
+                    <asp:LinkButton ID="lnkHome" runat="server" PostBackUrl="/Home.aspx">Home</asp:LinkButton>
+                    <asp:LinkButton ID="lnkAboutUs" runat="server" PostBackUrl="/AboutUs.aspx">About Us</asp:LinkButton>
+
+                    
+                    <div class="categories">
+                        <span class="category-toggle" onclick="toggleSubcategories()">Menu</span>
+                        <div class="dropdown-content" id="subcategoryList">
+                            <asp:Repeater ID="rptCategories" runat="server">
+                                <ItemTemplate>
+                                    <a href='<%# "Menu.aspx?CategorySlug=" + Eval("CategorySlug") %>'>
+                                        <%# Eval("CategoryName") %>
+
+                                    </a>
+    </ItemTemplate>
+</asp:Repeater>
+                        </div>
+                    </div>
+
+                    <asp:LinkButton ID="lnkContact" runat="server" PostBackUrl="/ContactUs.aspx">Contact Us</asp:LinkButton>
+                </div>
+
+                <div class="search-container">
+                    <asp:TextBox ID="txtSearch" runat="server" CssClass="search-box" placeholder="Search products..."></asp:TextBox>
+                    <asp:LinkButton ID="btnSearch" runat="server" CssClass="search-btn" OnClick="btnSearch_Click">
+                        <i class="fa fa-search"></i> 
+                    </asp:LinkButton>
+                </div>
+
+
+                <div class="icons">
+                    <asp:LinkButton ID="lnkAccount" runat="server" OnClientClick="toggleAccountDropdown(); return false;">
+                        <img src="/Images/user.png" alt="Account" />
+                    </asp:LinkButton>
+                    
+                    <div id="accountDropdown" class="dropdown-content">
+                        <asp:ContentPlaceHolder ID="AccountMenu" runat="server">   
+                        </asp:ContentPlaceHolder>
+                    </div>
+
+                    <asp:UpdatePanel ID="UpdatePanelCart" runat="server">
+                        <ContentTemplate>
+                            <asp:LinkButton ID="lnkCart" runat="server" PostBackUrl="/Cart.aspx" CssClass="cart-container">
+                                <img src="/Images/cart.png" alt="Cart" class="cart-icon" />
+                                <div class="cart-badge-wrapper">
+                                    <asp:Label ID="lblCartItemCount" runat="server" CssClass="cart-badge" Visible="false"></asp:Label>
+                                </div>
+                            </asp:LinkButton>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                </div>
+            </div>
+
+            <div class="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <AWPfooter:footer ID="footer1" runat="server" />
+    </form>
+
+    <script>
+        function toggleSubcategories() {
+            const subcategoryList = document.getElementById("subcategoryList");
+            subcategoryList.classList.toggle("show");
+        }
+
+        function toggleAccountDropdown() {
+            const dropdown = document.getElementById("accountDropdown");
+            dropdown.classList.toggle("show");
+        }
+
+        // Close dropdowns when clicking outside
+        document.addEventListener("click", function (event) {
+            const accountDropdown = document.getElementById("accountDropdown");
+            const accountIcon = document.getElementById("<%= lnkAccount.ClientID %>");
+
+    if (!accountDropdown.contains(event.target) && !accountIcon.contains(event.target)) {
+        accountDropdown.classList.remove("show");
+    }
+});
+
+    </script>
+</body>
+</html>

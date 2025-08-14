@@ -1,0 +1,55 @@
+﻿.cu-panel {
+    max-width: 100%; /* Allow full width if needed */
+    margin: 0; /* Remove centering margin */
+    padding: 0; /* Remove padding */
+    background-color: transparent; /* Make the background transparent */
+    box-shadow: none; /* Remove box shadow */
+    border: none; /* Remove border */
+    font-family: Arial, sans-serif; /* Keep the font family */
+}
+
+.title {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left; /* Ensure content is aligned to the left */
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Textbox Styling */
+.textbox {
+    width: 100%; /* Full width */
+    max-width: 300px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Button Container */
+.button-container {
+    margin-top: 15px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #cc00b8;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+    .button:hover {
+        background-color: #a60396;
+    }
+

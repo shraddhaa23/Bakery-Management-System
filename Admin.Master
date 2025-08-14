@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="BakeryShop.Admin" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Images/favicon.ico" type="image/x-icon">
+    <link href="Admin_style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="admin-container">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="logo">
+                    <h2>Admin Panel</h2>
+                </div>
+                <nav>
+                    <ul>
+                        <li><asp:HyperLink runat="server" NavigateUrl="Dashboard.aspx">Dashboard</asp:HyperLink></li>
+                        <li><asp:HyperLink runat="server" NavigateUrl="Users.aspx">Registered Users</asp:HyperLink></li>
+                        <li><asp:HyperLink runat="server" NavigateUrl="Categories.aspx">Bakery Categories</asp:HyperLink></li>
+                        <li><asp:HyperLink runat="server" NavigateUrl="Products.aspx">Bakery Products</asp:HyperLink></li>
+                        <li><asp:HyperLink runat="server" NavigateUrl="Orders.aspx">Orders</asp:HyperLink></li>
+                    </ul>
+                </nav>
+                <div class="logout-btn">
+                    <asp:Button ID="Button1" runat="server" Text="Logout" OnClick="Button1_Click" CssClass="logout-button" />
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="content">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+            </main>
+        </div>
+    </form>
+</body>
+</html>
+
